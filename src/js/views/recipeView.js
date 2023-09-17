@@ -1,4 +1,4 @@
-import View from "./view.js";
+import View from "./View.js";
 
 //import icons from "../img/icons.svg"; // parcel 1
 import icons from "url:../../img/icons.svg"; // parcel 2
@@ -9,6 +9,7 @@ class RecipeView extends View {
   _errorMessage = "We could not find that recipe. Please try another one!";
   _message = " ";
 
+  // publisher subscriber function
   addHandlerRender(handler) {
     ["hashchange", "load"].forEach((ev) =>
       window.addEventListener(ev, handler)
